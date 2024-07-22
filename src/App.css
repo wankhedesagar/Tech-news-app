@@ -1,38 +1,149 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 2rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-family: serif;
+  font-size: 2.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 4rem 0;
+  color: rgba(21, 19, 60, 0.5);
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.stories-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+span {
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.card {
+  min-width: 20rem;
+  width: 40vw;
+  padding: 4rem;
+  background-color: rgba(255, 0, 0, 0.4);
+  box-shadow: 10px 10px rgb(162, 151, 151);
+  border-radius: 0.5rem;
+  color: #15133c;
+}
+
+.card-button {
+  flex-direction: rwo;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.card-button a {
+  color: #92b4ec;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.card-button a:last-child {
+  color: rgb(22, 6, 92);
+}
+
+form {
+  display: grid;
+  place-items: center;
+}
+
+input {
+  padding: 1rem;
+  min-width: 40rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  border: none;
+  border-bottom: 0.2rem solid #15133c;
+  outline: none;
+}
+
+.pagination-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.pagination-btn p {
+  color: black;
+  font-size: 18px;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  font-size: 1.6rem;
+  background-color: #0080ff;
+  color: #ffffff;
+  margin: 3rem;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0000ff;
+}
+
+/* responsive layout */
+
+@media (max-width: 998px) {
+  html {
+    font-size: 56%;
   }
 }
+
+.card {
+  min-width: 45rem;
+  padding: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .card {
+    min-width: 35rem;
+    padding: 2rem;
+  }
+}
+
+/* .card{
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+} */
